@@ -1,0 +1,12 @@
+HAAR_CASCADE_FILE: /home/nguob/workspaces/src/ros_test/scripts/haarcascade_frontalface_default.xml
+CAP_ID: 0
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_ubuntu__33833: http://ubuntu:33833/
+rosversion: '1.15.9
+
+  '
+run_id: 45772496-8eda-11eb-9dba-b3e8e0b28836

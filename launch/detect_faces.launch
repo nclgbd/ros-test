@@ -1,0 +1,12 @@
+<launch>
+  <include file="$(find video_stream_opencv)/launch/camera.launch" >
+    <arg name="video_stream_provider" value="0" />
+    <arg name="fps" value="60" />
+    <arg name="buffer_queue_size" value="1" />
+    <arg name="flip_horizontal" value="true" />
+  </include>
+  <param name="HAAR_CASCADE_FILE" type="string" value="/home/nguob/workspaces/src/ros_test/scripts/haarcascade_frontalface_alt.xml" />
+  <node name="video_sub_node" pkg="ros_test" type="video_subscriber" />
+  <node name="face_sub_node" pkg="ros_test" type="face_detector.py" />
+  <node name="video_gui_node" pkg="ros_test" type="video_gui.py" />
+</launch>
